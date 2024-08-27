@@ -46,7 +46,7 @@ const registerFormic=  useFormik({
   })
 })
   return (
-    <>
+    <div className='mx-5'>
     
 
 <form onSubmit={registerFormic.handleSubmit} className="max-w-md mx-auto mt-28 ">
@@ -99,6 +99,6 @@ const registerFormic=  useFormik({
 </form>
 
 
-    </>
+    </div>
   )
 }

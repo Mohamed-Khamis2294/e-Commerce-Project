@@ -46,7 +46,7 @@ export default function Signin() {
     })
   })
     return (
-      <>
+      <div className='mx-5'>
       
   
   <form onSubmit={loginFormic.handleSubmit} className="max-w-md mx-auto mt-28 ">
@@ -84,6 +84,6 @@ export default function Signin() {
   </form>
   
   
-      </>
+      </div>
     )
 }

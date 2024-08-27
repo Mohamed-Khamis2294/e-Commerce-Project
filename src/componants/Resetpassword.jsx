@@ -39,7 +39,7 @@ export default function Resetpassword() {
     })
   })
     return (
-      <>
+      <div className='mx-5'>
       
   
   <form onSubmit={resetFormic.handleSubmit} className="max-w-md mx-auto mt-28 ">
@@ -77,6 +77,6 @@ export default function Resetpassword() {
   </form>
   
   
-      </>
+      </div>
     )
 }

@@ -36,7 +36,7 @@ export default function Verify() {
     })
   })
     return (
-      <>
+      <div className='mx-5'>
       
   
   <form onSubmit={verifyFormic.handleSubmit} className="max-w-md mx-auto mt-28 ">
@@ -67,7 +67,7 @@ export default function Verify() {
   </form>
   
   
-      </>
+      </div>
     )
 }
 

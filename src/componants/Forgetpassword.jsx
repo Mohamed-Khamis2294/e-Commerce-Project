@@ -35,7 +35,7 @@ export default function Forgetpassword() {
     })
   })
     return (
-      <>
+      <div className='mx-5'>
       
   
   <form onSubmit={forgetFormic.handleSubmit} className="max-w-md mx-auto mt-28 ">
@@ -66,7 +66,7 @@ export default function Forgetpassword() {
   </form>
   
   
-      </>
+      </div>
     )
 }
 
