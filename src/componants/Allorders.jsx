@@ -8,6 +8,7 @@ import Error404 from './Error404'
 export default function Allorders() {
   // const{cartowner}=useContext(Cartcontextobj);
   // console.log(cartowner)
+  // const[any,setAny]=useState(false)
   function getorders(){
     return axios.get(`https://ecommerce.routemisr.com/api/v1/orders/user/${       localStorage.getItem('owner')
   }`)
@@ -16,11 +17,11 @@ export default function Allorders() {
     queryKey:['orders'],
     queryFn:getorders
   })
-  // if(isError){
-  //   return(
-  //     <Error404/>
-  //   ) 
-  // }
+  if(isError){
+    return(
+      <Error404/>
+    ) 
+  }
   if(isLoading){
     return (
       <div className='w-full h-screen  flex justify-center items-center'>
