@@ -41,7 +41,7 @@ export default function Cartcontext({children}) {
     )
     .catch((res)=>{
       // console.log(res)
-    toast.error(res.data.message)
+    // toast.error(res.data.message)
     setLoading(false)
     })
   }

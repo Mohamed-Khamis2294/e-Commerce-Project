@@ -36,7 +36,7 @@ export default function Wishlist() {
 
 {wisharray.map(p=><div key={p._id} className="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 
-<img className="rounded-t-lg w-6/12 block mx-auto" src={p.imageCover} alt='' />
+<img className="rounded-t-lg w-6/12 block mx-auto" src={p.imageCover} alt='wish-img' />
 
 <div className="p-5">
 <a href="#">

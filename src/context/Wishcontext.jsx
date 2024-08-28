@@ -58,6 +58,7 @@ export default function Wishcontext({children}) {
       localStorage.setItem('wisharray',JSON.stringify(res.data.data))
       setWisharray(JSON.parse(localStorage.getItem('wisharray')))
   toast.success(res.data.message)
+  getWishlist(id)
     })
     .catch((res)=>console.log(res))
   }
