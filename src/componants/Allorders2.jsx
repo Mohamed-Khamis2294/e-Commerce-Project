@@ -3,10 +3,9 @@ import axios from 'axios'
 import React from 'react'
 import Loading from '../Loading'
 import Error404 from './Error404'
-import Allorders2 from './Allorders2'
 // import { Cartcontextobj } from '../context/Cartcontext';
 
-export default function Allorders() {
+export default function Allorders2() {
   // const{cartowner}=useContext(Cartcontextobj);
   // console.log(cartowner)
   // const[any,setAny]=useState(false)
@@ -15,12 +14,12 @@ export default function Allorders() {
   }`)
   }
   const{data,isError,isLoading,isSuccess}=useQuery({
-    queryKey:['orders'],
+    queryKey:['orders2'],
     queryFn:getorders
   })
   if(isError){
     return(
-      <Allorders2/>
+      <Error404/>
     ) 
   }
   if(isLoading){

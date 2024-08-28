@@ -25,6 +25,7 @@ import Cartcontext from './context/Cartcontext.jsx';
 import Wishcontext from './context/Wishcontext';
 import Payment from './componants/Payment.jsx';
 import Allorders from './componants/Allorders.jsx';
+import Allorders2 from './componants/Allorders2.jsx';
 
 const router=createBrowserRouter([
   {path:'',element:<Layout/>,children:[
@@ -37,6 +38,7 @@ const router=createBrowserRouter([
     {path:'/wishlist',element:<ProtectedRoute><Wishlist/></ProtectedRoute>},
     {path:'/payment',element:<ProtectedRoute><Payment/></ProtectedRoute>},
     {path:'/allorders',element:<ProtectedRoute><Allorders/></ProtectedRoute>},
+    {path:'/allorders2',element:<ProtectedRoute><Allorders2/></ProtectedRoute>},
     {path:'/productDetails/:id',element:<ProtectedRoute><ProductDetails/></ProtectedRoute>},
     {path:'/signin',element:<Signin/>},
     {path:'/register',element:<Register/>},
